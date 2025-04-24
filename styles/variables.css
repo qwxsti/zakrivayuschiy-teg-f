@@ -2,11 +2,12 @@
 
 :root {
     --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
+    --accent-font: 'PressStart2P';
 
     --main-font-weight: 400;
     --accent-font-weight: 700;
 
     --main-bg-color: #fff;
     --main-color: #000;
+    --label-stroke-color: #fff;
 }
