@@ -4,8 +4,37 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+.like-icon .contour {
+    fill: var(--main-color);
+    transition: fill 0.1s linear;
+  }
+  
+  .like-icon .core {
+    fill: none;
+    transition: fill 0.3s linear 0.03s;
+  }
+  
+  .like-icon .main-body {
+    fill: none;
+    transition: fill 0.3s linear;
+  }
+
+  .like-icon .sparks {
+    fill: none
+  }
+
+  .card__icon-button:hover .like-icon .core {
+    fill: var(--main-color);
+    transition-delay: 0;
+  }
+
+  .card__icon-button:hover .like-icon .main-body {
+    fill: var(--main-color);
+    transition-delay: 0.05s;
+  }
