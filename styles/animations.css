@@ -70,10 +70,10 @@
 
 .like-icon.is-liked {
   transform-origin: center;
-  animation: like 0.3s ease-in;
+  animation: scalePulse 0.3s 0.1s ease-in;
 }
 
-@keyframes like {
+@keyframes scalePulse {
   0% {
     scale: 1;
   }
