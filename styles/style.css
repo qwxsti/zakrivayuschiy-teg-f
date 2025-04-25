@@ -118,10 +118,11 @@
   border: none;
   block-size: 36px;
   inline-size: 39px;
-  margin-inline-end: 10px;
+  margin-inline-end: 6px;
   box-shadow: 0 0 0 2px transparent;
   transition: box-shadow 0.3s ease;
   padding: 0;
+  cursor: pointer;
 }
 
 .card__icon-button:focus-visible {
@@ -137,7 +138,8 @@
   background-color: transparent;
   font-family: var(--accent-font), monospace;
   font-size: 14px;                            
-  padding: 9px 35px;
+  block-size: 38px;
+  inline-size: 130px;
   border: 2px solid var(--main-color);
   transition: box-shadow 0.3s ease;
 }
