@@ -9,15 +9,17 @@
 
 */
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   background-color: var(--main-bg-color);
-  background-image: 
-    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(180deg, #e7e7e7, #1a1a1a);
 }
@@ -56,7 +58,7 @@
 }
 
 .card-title {
-  font-variation-settings: 'wght' var(--accent-font-weight);
+  font-variation-settings: "wght" var(--accent-font-weight);
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0;
@@ -89,11 +91,9 @@
   mix-blend-mode: hard-light;
   opacity: 50%;
 
-  text-shadow: 
-  -1px 0 var(---label-stroke-color),
-  0 1px var(--label-stroke-color),
-  1px 0 var(--label-stroke-color),
-  0 -1px var(--label-stroke-color);
+  text-shadow: -1px 0 var(---label-stroke-color),
+    0 1px var(--label-stroke-color), 1px 0 var(--label-stroke-color),
+    0 -1px var(--label-stroke-color);
 }
 
 .card-content-container {
@@ -133,11 +133,11 @@
 .card__like-button {
   position: relative;
   overflow: hidden;
-  cursor:pointer;
+  cursor: pointer;
 
   background-color: transparent;
   font-family: var(--accent-font), monospace;
-  font-size: 14px;                            
+  font-size: 14px;
   block-size: 38px;
   inline-size: 130px;
   border: 2px solid var(--main-color);
@@ -150,7 +150,7 @@
 }
 
 .card__like-button::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--main-color);
@@ -213,8 +213,8 @@
 .save-button {
   position: relative;
   overflow: hidden;
-  cursor:pointer;
-  
+  cursor: pointer;
+
   justify-items: center;
   align-items: center;
   gap: 8px;
@@ -224,7 +224,7 @@
 
   font-family: var(--accent-font), monospace;
   font-size: 14px;
-  transition: box-shadow 0.3s ease;                           
+  transition: box-shadow 0.3s ease;
 }
 
 .save-button:focus-visible {
@@ -233,7 +233,7 @@
 }
 
 .save-button::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--main-color);
@@ -280,7 +280,7 @@ body:has(.dialog-window[open]) {
   font-family: var(--accent-font), monospace;
   font-size: 14px;
   line-height: 150%;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   grid-column: 2;
   grid-row: 1;
   justify-self: start;
@@ -289,18 +289,18 @@ body:has(.dialog-window[open]) {
 .window-button {
   position: relative;
   overflow: hidden;
-  cursor:pointer;
-  
+  cursor: pointer;
+
   justify-items: center;
   align-items: center;
   gap: 8px;
   background-color: var(--main-bg-color);
   border: 2px solid var(--main-color);
   padding: 18px 20px;
-  transition: box-shadow 0.3s ease; 
+  transition: box-shadow 0.3s ease;
 
   font-family: var(--accent-font), monospace;
-  font-size: 14px;   
+  font-size: 14px;
 }
 
 .window-button:focus-visible {
@@ -309,7 +309,7 @@ body:has(.dialog-window[open]) {
 }
 
 .window-button::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--main-color);
@@ -341,11 +341,14 @@ body:has(.dialog-window[open]) {
   margin-block-end: 100px;
 }
 
-@supports((text-stroke: 1px var(--label-stroke-color)) or (-webkit-text-stroke: 1px var(--label-stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--label-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--label-stroke-color))
+) {
   .card-image-label {
-   -webkit-text-stroke: 1px var(--label-stroke-color);
-   text-stroke: 1px var(--label-stroke-color);
-   text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
+    text-shadow: none;
   }
 }
 
@@ -355,11 +358,10 @@ body:has(.dialog-window[open]) {
   }
 
   .card-image-label {
-
     inset-inline-end: 13px;
     inset-block-start: 25px;
   }
-  
+
   .dialog-window {
     max-inline-size: 341px;
   }
@@ -372,10 +374,10 @@ body:has(.dialog-window[open]) {
 
   .save-button__icon {
     grid-row: 1;
-    scale: calc(1 + (21/29)); 
+    scale: calc(1 + (21 / 29));
   }
-    
+
   .save-button__text {
     grid-row: 0;
   }
-  }
+}
