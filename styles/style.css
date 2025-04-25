@@ -223,7 +223,8 @@
   padding: 18px 20px;
 
   font-family: var(--accent-font), monospace;
-  font-size: 14px;                           
+  font-size: 14px;
+  transition: box-shadow 0.3s ease;                           
 }
 
 .save-button:focus-visible {
